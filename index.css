@@ -1,0 +1,185 @@
+:root {
+    --color-btn: wheat;
+    --color-btn-hover: rgb(224, 185, 115);
+    --color-text: rgb(84, 84, 84)5;
+    --color-background-oscuro:rgb(224, 185, 115);
+    --color-background-claro:wheat;
+}
+body {
+    background-color: var(--color-background-claro);
+    display: grid;
+    grid-template-areas:
+        'header header header header'
+        'separador separador separador separador'
+        'main main main main'
+        'main main main main'
+        'separador2 separador2 separador2 separador2'
+        'footer footer footer footer';
+    margin: 0px;
+}
+
+nav {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+
+#img-logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 20px;
+}
+
+.navbar {
+    background-color: var(--color-background-oscuro);
+    border-radius: 20px;
+}
+
+.navbar>a {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#img-navbar {
+    height: 60px;
+    width: 60px;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 200px;
+}
+
+.about-img {
+    width: 35%;
+    height: 400px;
+    background: linear-gradient(to right, transparent, var(--color-background-claro)), url(./img/platos.avif)
+}
+
+.about {
+    justify-content: end;
+    display: flex;
+    align-items: center;
+    color: var(--color-text);
+    font-size: 32px;
+    width: 55%;
+    font-family: "Josefin Sans", sans-serif;
+    ;
+}
+
+.separador {
+    grid-area: separador;
+    width: 100%;
+    height: 50vh;
+}
+
+.wave {
+    position: absolute;
+    width: 100%;
+    top: 75%;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-top: 50px;
+}
+
+.header-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+.btn{
+    width: 250px;
+    font-size: 38px;
+    font-family:"Josefin Sans", sans-serif;
+    background-color: var(--color-background-claro);
+    color: rgb(84, 84, 84);
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+.btn:hover{
+    background-color: var(--color-background-oscuro);
+    color: white;
+}
+.conteiner-prd{
+    box-shadow: 0 0 7px #222;
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+}
+.seccion-productos{
+    display: flex;
+}
+.conteiner-titulo{
+    font-size: 28px;
+    font-weight: bolder;
+}
+.card-productos{
+    background-color: var(--color-background-claro);
+    border-radius: 20px;
+    margin: 20px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.descripcion-productos{
+    font-size: 13px;
+}
+.separador2{
+    grid-area: separador2;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to bottom, white, var(--color-background-oscuro))
+}
+footer {
+    grid-area: footer;
+    background-color: var(--color-background-oscuro);
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+.conteiner-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+.conteiner-text-ft{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+.conteiner-info-text{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.textFooter{
+    font-weight: bold;
+}
+.logofooter{
+    height: 200px;
+}
+.derechos{
+    opacity: 0.5;
+    margin: 20px;
+    text-align: center;
+}
