@@ -15,9 +15,20 @@
 
 <body>
     <nav>
-        <div class="navbar">
-            <a href="#inicio"><img src="./img/hamburger-menu-svgrepo-com.svg" alt="navbar" id="img-navbar"></a>
-        </div>
+        <button class="pointer" id="navbar" onclick=carrito()>
+            <svg height="40px" width="40px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 44.16 44.16" xml:space="preserve"
+                id="img-navbar">
+                <g>
+                    <path style="fill:#010002;" d="M44.16,6.6H11.592L10.66,1.179H2.408C1.076,1.179,0,2.257,0,3.588v2.408h6.602l4.248,24.709
+		c0.094,0.544,0.617,0.985,1.17,0.985h28.527c1.332,0,2.41-1.077,2.41-2.411v-2.406H15.078l-0.587-3.414h22.042
+		c2.66,0,5.172-2.128,5.611-4.75L44.16,6.6z" />
+                    <circle style="fill:#010002;" cx="19.47" cy="38.817" r="4.165" />
+                    <path style="fill:#010002;" d="M29.762,38.816c0,2.299,1.863,4.164,4.162,4.164c2.301,0,4.168-1.865,4.168-4.164
+		c0-2.299-1.867-4.166-4.168-4.166C31.625,34.65,29.762,36.518,29.762,38.816z" />
+                </g>
+            </svg>
+        </button>
         <div>
             <img src="./img/cook_and_look.png" alt="logo" id="img-logo">
         </div>
@@ -36,144 +47,14 @@
     <div class="separador"></div>
     <main>
         <div class="header-productos">
-            <button class="btn marked" data-number="1">Productos</button>
-            <button class="btn" data-number="2">Salados</button>
-            <button class="btn" data-number="3">Dulces</button>
-            <button class="btn" data-number="4">Reseñas</button>
+            <button class="btn" data-number="1">Productos</button>
+            <button class="btn" data-number="2">Reseñas</button>
         </div>
         <h2 class="conteiner-titulo">Productos</h2>
-        <div class="conteiner-prd">
-            <section data-section="1" class="seccion-producto">
-                <div class="card-productos">
-                    <img src="./img/empanadas.png" alt="empanadas" />
-                    <div class="detalles-productos">
-                        <h2 class="nombre-productos">Empanadas</h2>
-                        <p class="descripcion-productos">Salado</p>
-                        <p class="descripcion-productos">Cantidad : 4</p>
-                        <p class="descripcion-productos">Precio : 2400$</p>
-                    </div>
-                </div>
+        <div id="conteiner-prd">
+            <section class="seccion-producto">
             </section>
-            <section data-section="1" class="seccion-producto">
-                <div class="card-productos">
-                    <img src="./img/empanadas.png" alt="empanadas" />
-                    <div class="detalles-productos">
-                        <h2 class="nombre-productos">Empanadas</h2>
-                        <p class="descripcion-productos">Salado</p>
-                        <p class="descripcion-productos">Cantidad : 4</p>
-                        <p class="descripcion-productos">Precio : 2400$</p>
-                    </div>
-                </div>
-            </section>
-            <section data-section="1" class="seccion-producto">
-                <div class="card-productos">
-                    <img src="./img/empanadas.png" alt="empanadas" />
-                    <div class="detalles-productos">
-                        <h2 class="nombre-productos">Empanadas</h2>
-                        <p class="descripcion-productos">Salado</p>
-                        <p class="descripcion-productos">Cantidad : 4</p>
-                        <p class="descripcion-productos">Precio : 2400$</p>
-                    </div>
-                </div>
-            </section>
-            <section data-section="1" class="seccion-producto">
-                <div class="card-productos">
-                    <img src="./img/empanadas.png" alt="empanadas" />
-                    <div class="detalles-productos">
-                        <h2 class="nombre-productos">Empanadas</h2>
-                        <p class="descripcion-productos">Salado</p>
-                        <p class="descripcion-productos">Cantidad : 4</p>
-                        <p class="descripcion-productos">Precio : 2400$</p>
-                    </div>
-                </div>
-            </section>
-            <section data-section="1" class="seccion-producto">
-                <div class="card-productos">
-                    <img src="./img/empanadas.png" alt="empanadas" />
-                    <div class="detalles-productos">
-                        <h2 class="nombre-productos">Empanadas</h2>
-                        <p class="descripcion-productos">Salado</p>
-                        <p class="descripcion-productos">Cantidad : 4</p>
-                        <p class="descripcion-productos">Precio : 2400$</p>
-                    </div>
-                </div>
-            </section>
-            <section data-section="1" class="seccion-producto">
-                <div class="card-productos">
-                    <img src="./img/empanadas.png" alt="empanadas" />
-                    <div class="detalles-productos">
-                        <h2 class="nombre-productos">Empanadas</h2>
-                        <p class="descripcion-productos">Salado</p>
-                        <p class="descripcion-productos">Cantidad : 4</p>
-                        <p class="descripcion-productos">Precio : 2400$</p>
-                    </div>
-                </div>
-            </section>
-            <section data-section="1" class="seccion-producto">
-                <div class="card-productos">
-                    <img src="./img/empanadas.png" alt="empanadas" />
-                    <div class="detalles-productos">
-                        <h2 class="nombre-productos">Empanadas</h2>
-                        <p class="descripcion-productos">Salado</p>
-                        <p class="descripcion-productos">Cantidad : 4</p>
-                        <p class="descripcion-productos">Precio : 2400$</p>
-                    </div>
-                </div>
-            </section>
-            <section data-section="1" class="seccion-producto">
-                <div class="card-productos">
-                    <img src="./img/empanadas.png" alt="empanadas" />
-                    <div class="detalles-productos">
-                        <h2 class="nombre-productos">Empanadas</h2>
-                        <p class="descripcion-productos">Salado</p>
-                        <p class="descripcion-productos">Cantidad : 4</p>
-                        <p class="descripcion-productos">Precio : 2400$</p>
-                    </div>
-                </div>
-            </section>
-            <section data-section="1" class="seccion-producto">
-                <div class="card-productos">
-                    <img src="./img/empanadas.png" alt="empanadas" />
-                    <div class="detalles-productos">
-                        <h2 class="nombre-productos">Empanadas</h2>
-                        <p class="descripcion-productos">Salado</p>
-                        <p class="descripcion-productos">Cantidad : 4</p>
-                        <p class="descripcion-productos">Precio : 2400$</p>
-                    </div>
-                </div>
-            </section>
-            <section data-section="1" class="seccion-producto">
-                <div class="card-productos">
-                    <img src="./img/empanadas.png" alt="empanadas" />
-                    <div class="detalles-productos">
-                        <h2 class="nombre-productos">Empanadas</h2>
-                        <p class="descripcion-productos">Salado</p>
-                        <p class="descripcion-productos">Cantidad : 4</p>
-                        <p class="descripcion-productos">Precio : 2400$</p>
-                    </div>
-                </div>
-            </section>
-            <section data-section="1" class="seccion-producto">
-                <div class="card-productos">
-                    <img src="./img/empanadas.png" alt="empanadas" />
-                    <div class="detalles-productos">
-                        <h2 class="nombre-productos">Empanadas</h2>
-                        <p class="descripcion-productos">Salado</p>
-                        <p class="descripcion-productos">Cantidad : 4</p>
-                        <p class="descripcion-productos">Precio : 2400$</p>
-                    </div>
-                </div>
-            </section>
-            <section data-section="1" class="seccion-producto">
-                <div class="card-productos">
-                    <img src="./img/empanadas.png" alt="empanadas" />
-                    <div class="detalles-productos">
-                        <h2 class="nombre-productos">Empanadas</h2>
-                        <p class="descripcion-productos">Salado</p>
-                        <p class="descripcion-productos">Cantidad : 4</p>
-                        <p class="descripcion-productos">Precio : 2400$</p>
-                    </div>
-                </div>
+            <section class="seccion-producto hidden">
             </section>
         </div>
     </main>
@@ -191,6 +72,35 @@
             <img src="./img/cook_and_look.png" alt="" class="logofooter">
         </div>
     </footer>
+    <div id="modal-carrito">
+        <div class="box-center">
+            <div class="hoja-carrito fondo-producto">
+                <h2 class="titulo-carrito">Carrito de compra</h2>
+                <ul id="lista-carrito">
+                </ul>
+                <div class="compra-total">
+                    <button id="vaciar-carrito" onclick=borrarProducto()><img src="./img/delete.png" alt="delete"
+                            class="btn-delete">Vaciar carrito</button>
+                    <button onclick="document.getElementById('modal-carrito').style.display='none'">Confirmar
+                        Compra</button>
+                </div>
+                <button class="salir pointer circular"
+                    onclick="document.getElementById('modal-carrito').style.display='none'">&times;</button>
+            </div>
+        </div>
+    </div>
+    <div id="modal-compra">
+        <div class="box-center">
+            <div class="hoja-compra fondo-producto">
+                <div class="fs-button-group">
+                    <button class="fs-button" onclick=actualizarCarrito()>Comprar</button>
+                </div>
+                <button class="salir pointer circular"
+                    onclick="document.getElementById('modal-compra').style.display='none'">&times;</button>
+            </div>
+        </div>
+    </div>
 </body>
+<script src="./script.js"></script>
 
 </html>
